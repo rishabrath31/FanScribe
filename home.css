@@ -1,0 +1,121 @@
+.container {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.logo-and-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.logo-and-text img {
+  max-width: 150px;
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #4a4a4a;
+}
+
+.description {
+  font-size: 1.2em;
+  color: #666;
+  max-width: 600px;
+  margin: 10px 0; /* Adjusted margin */
+}
+
+.btn-1 {
+  background-color: green;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 50px;
+  color: white;
+}
+
+/* VIDEO SECTION STYLING  */
+
+.video-container {
+  display: flex;
+  position: relative;
+  /* animation: scroll 30s linear infinite; */
+}
+.video {
+  flex: 0 0 auto; /* Prevents the flex item from growing */
+  width: 200px; /* Fixed width for each video */
+  height: 100%; /* Full height of the container */
+  position: relative; /* Allows positioning of the video element */
+  margin-right: 16px;
+  background-color: #4a4a4a;
+  border-radius: 20px;
+}
+
+.video video {
+  width: 100%; /* Makes the video take the full width of the container */
+  height: 100%s; /* Makes the video take the full height of the container */
+  object-fit: cover; /* Ensures the video covers the container while maintaining aspect ratio */
+  border-radius: 20px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.video-container .video:nth-child(odd) {
+  margin-top: 20px;
+}
+
+/* Container 2 Styling */
+.container-2 {
+  margin-top: 100px; /* Space between the original container and container-2 */
+  border-radius: 8px; /* Rounded corners */
+
+  text-align: center; /* Centered text */
+}
+.container-2 h2 {
+  font: bold;
+  font-size: 36px;
+}
+
+.container-2 p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Card Styling */
+.card-make {
+  margin-top: 20px; /* Space above the card */
+  border: 1px solid #ddd; /* Border around the card */
+  border-radius: 28px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  width: 100%;
+}
+
+.card-logo {
+  max-width: 100%; /* Ensure image fits within column */
+  height: 430px; /* Maintain aspect ratio */
+}
+.row h1 {
+  font-size: 35px;
+}
+
+.row h3 {
+  font-size: 16px;
+  font-weight: 100;
+}
+.card-makes .card-content {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+}
