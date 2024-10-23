@@ -35,7 +35,16 @@ h1 {
   padding: 10px 20px;
   font-size: 1.2em;
   border-radius: 50px;
-  color: white;
+  color: white; /* Text color white */
+  text-decoration: none;
+  width: 220px;
+  display: inline-block; /* Ensure it behaves like a block */
+  text-align: center; /* Center the text inside */
+}
+
+.btn-1 a {
+  color: azure;
+  text-decoration: none;
 }
 
 /* VIDEO SECTION STYLING  */
@@ -77,10 +86,9 @@ h1 {
 
 /* Container 2 Styling */
 .container-2 {
-  margin-top: 100px; /* Space between the original container and container-2 */
-  border-radius: 8px; /* Rounded corners */
-
-  text-align: center; /* Centered text */
+  margin-top: 100px;
+  border-radius: 8px;
+  text-align: center;
 }
 .container-2 h2 {
   font: bold;
@@ -94,16 +102,21 @@ h1 {
 
 /* Card Styling */
 .card-make {
-  margin-top: 20px; /* Space above the card */
-  border: 1px solid #ddd; /* Border around the card */
-  border-radius: 28px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 28px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
+  overflow: hidden;
 }
 
 .card-logo {
-  max-width: 100%; /* Ensure image fits within column */
-  height: 430px; /* Maintain aspect ratio */
+  width: 100%;
+
+  object-fit: cover;
+}
+.btn-1 {
+  text-decoration: none;
 }
 .row h1 {
   font-size: 35px;
@@ -113,9 +126,112 @@ h1 {
   font-size: 16px;
   font-weight: 100;
 }
-.card-makes .card-content {
-  /* display: flex;
-  align-items: center;
+
+.card-makes {
+  max-width: 1000px; /* Set your desired width */
+  margin: 0 auto; /* Center the container */
+}
+.card-content {
+  padding: 10px;
+}
+.btn-1 {
+  margin-top: 10px;
+}
+
+/* PERSONOLISED VIDEOS SECTION */
+.personalized-videos {
+  text-align: center;
+}
+
+.video-categories {
+  display: flex;
   justify-content: center;
-  flex-direction: column; */
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+}
+
+.category img {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px;
+  border-radius: 50%;
+  object-fit: fill;
+  transition: transform 0.3s ease;
+}
+.category img:hover {
+  transform: scale(1.1);
+}
+
+.category a {
+  margin-top: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black; /* Adjust the color as needed */
+}
+
+.view-all a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  border: 2px solid black;
+}
+
+/* ======================================================= */
+/* FORM SECTION */
+
+h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: 500;
+}
+
+.budget-btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* ==================================================================================== */
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.imgg {
+  overflow: hidden;
+  width: 5%;
+  height: 300px;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+
+.imgg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgg:hover {
+  width: 15%;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imgg:nth-child(odd) {
+  margin-top: 50px;
+}
+
+.font-bolder {
+  display: flex;
+  justify-content: center;
 }
