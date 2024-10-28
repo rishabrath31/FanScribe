@@ -20,757 +20,825 @@
     <!-- FILTER SECTION -->
     <div class="container">
       <div class="row">
-        <div class="col-xl-2 col-lg-2 col-md-3"> 
-      <div class="filters">
-        <h3>Filters <a href="#" class="clear" id="clearFilters">Clear All</a></h3>
-        <div class="filter-section">
-          <p>Product</p>
-          <label><input type="checkbox" /> Recorded Video</label><br />
-          <label><input type="checkbox" /> DM on Instagram</label><br />
-          <label><input type="checkbox" /> Live Sessions</label>
-        </div>
+        <div class="col-xl-2 col-lg-2 col-md-3">
+          <div class="filters">
+            <h3>
+              Filters <a href="#" class="clear" id="clearFilters">Clear All</a>
+            </h3>
+            <div class="filter-section">
+              <p>Product</p>
+              <label><input type="checkbox" /> Recorded Video</label><br />
+              <label><input type="checkbox" /> DM on Instagram</label><br />
+              <label><input type="checkbox" /> Live Sessions</label>
+            </div>
 
-        <div class="filter-section">
-          <p>Sort By</p>
-          <label><input type="radio" name="sort" /> Popular</label><br />
-          <label><input type="radio" name="sort" /> Lowest Price</label><br />
-          <label><input type="radio" name="sort" /> Highest Price</label>
-        </div>
+            <div class="filter-section">
+              <p>Sort By</p>
+              <label><input type="radio" name="sort" /> Popular</label><br />
+              <label><input type="radio" name="sort" /> Lowest Price</label
+              ><br />
+              <label><input type="radio" name="sort" /> Highest Price</label>
+            </div>
 
-        <div class="filter-section">
-          <p>Price</p>
-          <label><input type="checkbox" /> Below ₹ 999</label><br />
-          <label><input type="checkbox" /> ₹ 1000 - ₹ 3000</label><br />
-          <label><input type="checkbox" /> ₹ 3000 - ₹ 7000</label><br />
-          <label><input type="checkbox" /> Above ₹ 7000</label>
+            <div class="filter-section">
+              <p>Price</p>
+              <label><input type="checkbox" /> Below ₹ 999</label><br />
+              <label><input type="checkbox" /> ₹ 1000 - ₹ 3000</label><br />
+              <label><input type="checkbox" /> ₹ 3000 - ₹ 7000</label><br />
+              <label><input type="checkbox" /> Above ₹ 7000</label>
+            </div>
+          </div>
+
+          <!-- ================================================================================================= -->
+        </div>
+        <div class="col-xl-10 col-lg-10 col-md-9">
+          <div class="mt-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Celebrity List</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Influencer
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <!-- ============================================================================================================= -->
+
+          <div
+            class="fst-sec d-flex justify-content-center align-items-center mt-3 position-relative"
+          >
+            <div
+              class="container d-flex justify-content-center align-items-center position-relative"
+            >
+              <!-- Left arrow button -->
+              <button
+                class="btn btn-secondary circle-btn position-absolute"
+                style="left: -10px"
+                id="left-arrow"
+              >
+                <i class="fas fa-arrow-left"></i>
+              </button>
+
+              <!-- Featured buttons in the middle, centered with a limited width -->
+              <div
+                class="container d-flex justify-content-center overflow-hidden"
+                style="max-width: 100%; overflow-x: hidden"
+              >
+                <div
+                  class="row justify-content-center slider-row"
+                  id="slider"
+                  style="
+                    display: flex;
+                    overflow-x: auto;
+                    scroll-behavior: smooth;
+                  "
+                >
+                  <div class="col-6 col-md-3 col-lg-2 mb-2">
+                    <button type="button" class="btn btn-secondary btn-block">
+                      Featured 1
+                    </button>
+                  </div>
+                  <div class="col-6 col-md-3 col-lg-2 mb-2">
+                    <button type="button" class="btn btn-secondary btn-block">
+                      Featured 2
+                    </button>
+                  </div>
+                  <div class="col-6 col-md-3 col-lg-2 mb-2">
+                    <button type="button" class="btn btn-secondary btn-block">
+                      Featured 3
+                    </button>
+                  </div>
+                  <div class="col-6 col-md-3 col-lg-2 mb-2">
+                    <button type="button" class="btn btn-secondary btn-block">
+                      Featured 4
+                    </button>
+                  </div>
+                  <div class="col-6 col-md-3 col-lg-2 mb-2">
+                    <button type="button" class="btn btn-secondary btn-block">
+                      Featured 5
+                    </button>
+                  </div>
+                  <div class="col-6 col-md-3 col-lg-2 mb-2">
+                    <button type="button" class="btn btn-secondary btn-block">
+                      Featured 6
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right arrow button -->
+              <button
+                class="btn btn-secondary circle-btn position-absolute"
+                style="right: -10px"
+                id="right-arrow"
+              >
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="mb-4">Did you know?</h2>
+                <p>
+                  You can now book a personalised video message from your
+                  favourite Influencer!
+                </p>
+                <p>
+                  An influencer is a person who has power over your target
+                  audience in your specialty or sector. Influencers are
+                  knowledgeable, respected, or insightful about a particular
+                  topic. Since they exist in a particular niche, they serve as a
+                  good starting point for businesses looking to establish trust.
+                </p>
+                <p>
+                  In 2017, 85% of marketers used influencer marketing, and 92%
+                  of them believed their initiatives were successful.
+                </p>
+                <p>
+                  An influencer helps businesses with "influencer marketing," a
+                  type of advertising that establishes brand authority based on
+                  the reputation of another individual.
+                </p>
+                <p>
+                  Influencers have a long history in marketing. Initially,
+                  businesses relied on charismatic personalities like athletes
+                  and entertainers to promote their products through radio and
+                  television advertisements. The popularity of different
+                  influencer types has increased due to the growth of social
+                  media. Influencers today fall into the following groups:
+                </p>
+                <ul>
+                  <li>
+                    Celebrities: pop culture, sports, and arts personalities
+                  </li>
+                  <li>Experts and opinion leaders in a specific field</li>
+                  <li>Micro-influencers: people with social media influence</li>
+                  <li>Content creators and bloggers</li>
+                </ul>
+                <p>
+                  Today, social media is the main platform for influencer
+                  marketing. Micro-influencers and bloggers offer a more
+                  affordable option for developing firms to get immediate
+                  recognition.
+                </p>
+                <p>
+                  Influencers are useful because they provide quick access to
+                  the credibility that a developing business needs. 70% of
+                  millennials say that peer recommendations impact their
+                  decisions. Influencers act as a bridge between businesses and
+                  their target market. Collaborating with an influencer can
+                  increase your brand reach, build trust, and improve your
+                  relationship with customers.
+                </p>
+                <p>
+                  The average earnings per post for micro-influencers with
+                  5,000–10,000 followers is Rs 6,531. Artists with 250,000 to
+                  500,000 followers charge roughly Rs 49,725 per post, and
+                  creators with 50,000 to 80,000 followers typically charge
+                  around Rs 14,843 per post.
+                </p>
+                <p>
+                  A few Influencers who have successfully collaborated with
+                  brands include
+                  <a href="#" target="_blank">Megha Bajaj</a>,
+                  <a href="#" target="_blank">Mehak Sethi</a>,
+                  <a href="#" target="_blank">Bareen Aowate</a>, and
+                  <a href="#" target="_blank">Monika Yadav</a>, among others.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd Section -->
+
+          <div
+            class="row row-cols-1 row-cols-md-6 g-4 mt-3 justify-content-center"
+          >
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================================================================================== -->
+
+          <div class="row row-cols-1 row-cols-md-6 g-4 mt-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd Section -->
+
+          <div
+            class="col-12 col-sm-10 col-md-8 col-lg-6 form-container-wrapper"
+          >
+            <h1>Want to Take Your Business to the Next Level?</h1>
+            <div class="form-container">
+              <h2>
+                Boost Your Brand's Reach with Top Celebrities and Influencers!
+              </h2>
+              <p>
+                Fill the Form Below and Get Endorsements and Brand Promotion
+              </p>
+              <form>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Eg. First Name Last Name"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Eg. TaxBuddy / www.taxbuddy.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Eg. Marketing Head"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    placeholder="+91 Eg. 12345 67890"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    placeholder="Eg. abc@example.com"
+                    required
+                  />
+                  <select required>
+                    <option value="">Select the service</option>
+                    <option value="Option">Option 1</option>
+                    <option value="Option">Option 2</option>
+                    <option value="Option">Option 3</option>
+                    <option value="Option">Option 4</option>
+                    <option value="Option">Option 5</option>
+                    <option value="Option">Option 6</option>
+                  </select>
+                </div>
+                <div class="budget-group">
+                  <button type="button">₹50K~</button>
+                  <button type="button">₹50K-₹1L</button>
+                  <button type="button">₹1L-₹5L</button>
+                  <button type="button">₹5L-₹25L</button>
+                  <button type="button">₹25L+</button>
+                </div>
+                <button type="submit" class="submit-btn">
+                  Talk To Us Now!
+                </button>
+                <p class="disclaimer">
+                  Your information is safe with us <span>🔒</span>
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <!-- 4th section -->
+
+          <div
+            class="row row-cols-1 row-cols-md-6 g-4 mt-3 justify-content-center"
+          >
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================================================================================== -->
+
+          <div class="row row-cols-1 row-cols-md-6 g-4 mt-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/im.jpeg" class="card-img-top" alt="..." />
+                  <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Optimus Prime</h5>
+                  <p>#movieStar #influencer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ SECTION=================================================================================== -->
+          <div class="mt-5" id="faq-section">
+            <div class="container">
+              <h2 class="text-center mt-5" id="fonth">
+                Frequently Asked Questions
+              </h2>
+              <div class="cont-ques justify-content-center">
+                <div class="container mt-4">
+                  <div class="accordion" id="faqAccordion">
+                    <!-- First Question -->
+                    <div class="accordion-item mb-2">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          What is Influence?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#faqAccordion"
+                      >
+                        <div class="accordion-body">
+                          Influence refers to the ability to affect decisions,
+                          opinions, or actions of others.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Second Question -->
+                    <div class="accordion-item mb-2">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Who is an Influencer?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#faqAccordion"
+                      >
+                        <div class="accordion-body">
+                          An influencer is an individual who can affect the
+                          purchase decisions of others because of their
+                          authority, knowledge, or relationship with their
+                          audience.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Third Question -->
+                    <div class="accordion-item mb-2">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          What are the qualities of an Influencer?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#faqAccordion"
+                      >
+                        <div class="accordion-body">
+                          Influencers are typically authentic, engaging, and
+                          knowledgeable within a particular niche or industry.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Fourth Question -->
+                    <div class="accordion-item mb-2">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour"
+                        >
+                          How do Influencers help brands?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#faqAccordion"
+                      >
+                        <div class="accordion-body">
+                          Influencers can help brands reach a wider audience and
+                          build trust through their existing relationships with
+                          their followers.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Fifth Question -->
+                    <div class="accordion-item mb-2">
+                      <h2 class="accordion-header" id="headingFive">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFive"
+                          aria-expanded="false"
+                          aria-controls="collapseFive"
+                        >
+                          What platforms do Influencers use?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFive"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFive"
+                        data-bs-parent="#faqAccordion"
+                      >
+                        <div class="accordion-body">
+                          Influencers primarily use social media platforms like
+                          Instagram, YouTube, Twitter, TikTok, and LinkedIn to
+                          engage with their audiences.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Sixth Question -->
+                    <div class="accordion-item mb-2">
+                      <h2 class="accordion-header" id="headingSix">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseSix"
+                          aria-expanded="false"
+                          aria-controls="collapseSix"
+                        >
+                          How do Influencers get paid?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseSix"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingSix"
+                        data-bs-parent="#faqAccordion"
+                      >
+                        <div class="accordion-body">
+                          Influencers are typically paid through sponsored
+                          content, brand partnerships, affiliate marketing, or
+                          ad revenue from platforms like YouTube.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Additional questions can be added similarly -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container mt-3 mb-3">
+            <div class="row">
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                <button type="button" class="btn btn-dark w-100">
+                  Celebraties
+                </button>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                <button type="button" class="btn btn-dark w-100">Movies</button>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                <button type="button" class="btn btn-dark w-100">
+                  TV Shows
+                </button>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                <button type="button" class="btn btn-dark w-100">
+                  Web Series
+                </button>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                <button type="button" class="btn btn-dark w-100">
+                  Sports Events
+                </button>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                <button type="button" class="btn btn-dark w-100">Events</button>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                <button type="button" class="btn btn-dark w-100">Wishes</button>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                <button type="button" class="btn btn-dark w-100">Gifts</button>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                <button type="button" class="btn btn-dark w-100">Quotes</button>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                <button type="button" class="btn btn-dark w-100">
+                  Invitations
+                </button>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                <button type="button" class="btn btn-dark w-100">
+                  Captions
+                </button>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                <button type="button" class="btn btn-dark w-100">Aarti</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- Add more FAQ items similarly -->
 
-      <!-- ================================================================================================= -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+      ></script>
+      <script src="script.js"></script>
     </div>
-    <div class="col-xl-10 col-lg-10 col-md-9">
-
-      <div class="mt-3">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Celebrity List</a></li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Influencer
-            </li>
-          </ol>
-        </nav>
-      </div>
-      <!-- ============================================================================================================= -->
-       
-      <div class="fst-sec d-flex justify-content-center align-items-center mt-3 position-relative">
-        <div class="container d-flex justify-content-center align-items-center position-relative">
-          <!-- Left arrow button -->
-          <button class="btn btn-secondary circle-btn position-absolute" style="left: -10px;" id="left-arrow">
-            <i class="fas fa-arrow-left"></i>
-          </button>
-      
-          <!-- Featured buttons in the middle, centered with a limited width -->
-          <div class="container d-flex justify-content-center overflow-hidden" style="max-width: 100%; overflow-x: hidden;">
-            <div class="row justify-content-center slider-row" id="slider" style="display: flex; overflow-x: auto; scroll-behavior: smooth;">
-              <div class="col-6 col-md-3 col-lg-2 mb-2">
-                <button type="button" class="btn btn-secondary btn-block">Featured 1</button>
-              </div>
-              <div class="col-6 col-md-3 col-lg-2 mb-2">
-                <button type="button" class="btn btn-secondary btn-block">Featured 2</button>
-              </div>
-              <div class="col-6 col-md-3 col-lg-2 mb-2">
-                <button type="button" class="btn btn-secondary btn-block">Featured 3</button>
-              </div>
-              <div class="col-6 col-md-3 col-lg-2 mb-2">
-                <button type="button" class="btn btn-secondary btn-block">Featured 4</button>
-              </div>
-              <div class="col-6 col-md-3 col-lg-2 mb-2">
-                <button type="button" class="btn btn-secondary btn-block">Featured 5</button>
-              </div>
-              <div class="col-6 col-md-3 col-lg-2 mb-2">
-                <button type="button" class="btn btn-secondary btn-block">Featured 6</button>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Right arrow button -->
-          <button class="btn btn-secondary circle-btn position-absolute" style="right: -10px;" id="right-arrow">
-            <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-
-
-
-      <div class="mt-5">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="mb-4">Did you know?</h2>
-            <p>
-              You can now book a personalised video message from your favourite
-              Influencer!
-            </p>
-            <p>
-              An influencer is a person who has power over your target audience
-              in your specialty or sector. Influencers are knowledgeable,
-              respected, or insightful about a particular topic. Since they
-              exist in a particular niche, they serve as a good starting point
-              for businesses looking to establish trust.
-            </p>
-            <p>
-              In 2017, 85% of marketers used influencer marketing, and 92% of
-              them believed their initiatives were successful.
-            </p>
-            <p>
-              An influencer helps businesses with "influencer marketing," a type
-              of advertising that establishes brand authority based on the
-              reputation of another individual.
-            </p>
-            <p>
-              Influencers have a long history in marketing. Initially,
-              businesses relied on charismatic personalities like athletes and
-              entertainers to promote their products through radio and
-              television advertisements. The popularity of different influencer
-              types has increased due to the growth of social media. Influencers
-              today fall into the following groups:
-            </p>
-            <ul>
-              <li>Celebrities: pop culture, sports, and arts personalities</li>
-              <li>Experts and opinion leaders in a specific field</li>
-              <li>Micro-influencers: people with social media influence</li>
-              <li>Content creators and bloggers</li>
-            </ul>
-            <p>
-              Today, social media is the main platform for influencer marketing.
-              Micro-influencers and bloggers offer a more affordable option for
-              developing firms to get immediate recognition.
-            </p>
-            <p>
-              Influencers are useful because they provide quick access to the
-              credibility that a developing business needs. 70% of millennials
-              say that peer recommendations impact their decisions. Influencers
-              act as a bridge between businesses and their target market.
-              Collaborating with an influencer can increase your brand reach,
-              build trust, and improve your relationship with customers.
-            </p>
-            <p>
-              The average earnings per post for micro-influencers with
-              5,000–10,000 followers is Rs 6,531. Artists with 250,000 to
-              500,000 followers charge roughly Rs 49,725 per post, and creators
-              with 50,000 to 80,000 followers typically charge around Rs 14,843
-              per post.
-            </p>
-            <p>
-              A few Influencers who have successfully collaborated with brands
-              include
-              <a href="#" target="_blank">Megha Bajaj</a>,
-              <a href="#" target="_blank">Mehak Sethi</a>,
-              <a href="#" target="_blank">Bareen Aowate</a>, and
-              <a href="#" target="_blank">Monika Yadav</a>, among others.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2nd Section -->
-
-      <div class="row row-cols-1 row-cols-md-6 g-4 mt-3 justify-content-center">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ==================================================================================== -->
-
-      <div class="row row-cols-1 row-cols-md-6 g-4 mt-3">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3rd Section -->
-
-      <div class="col-12 col-sm-10 col-md-8 col-lg-6 form-container-wrapper">
-        <h1>Want to Take Your Business to the Next Level?</h1>
-        <div class="form-container">
-          <h2>Boost Your Brand's Reach with Top Celebrities & Influencers!</h2>
-          <p>Fill the Form Below and Get Endorsements & Brand Promotion</p>
-          <form>
-            <div class="form-group">
-              <input
-                type="text"
-                placeholder="Eg. First Name Last Name"
-                required
-              />
-              <input
-                type="text"
-                placeholder="Eg. TaxBuddy / www.taxbuddy.com"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <input type="text" placeholder="Eg. Marketing Head" required />
-              <input type="tel" placeholder="+91 Eg. 12345 67890" required />
-            </div>
-            <div class="form-group">
-              <input type="email" placeholder="Eg. abc@example.com" required />
-              <select required>
-                <option value="">Select the service</option>
-                <option value="Option">Option 1</option>
-                <option value="Option">Option 2</option>
-                <option value="Option">Option 3</option>
-                <option value="Option">Option 4</option>
-                <option value="Option">Option 5</option>
-                <option value="Option">Option 6</option>
-              </select>
-            </div>
-            <div class="budget-group">
-              <button type="button">₹50K~</button>
-              <button type="button">₹50K-₹1L</button>
-              <button type="button">₹1L-₹5L</button>
-              <button type="button">₹5L-₹25L</button>
-              <button type="button">₹25L+</button>
-            </div>
-            <button type="submit" class="submit-btn">Talk To Us Now!</button>
-            <p class="disclaimer">
-              Your information is safe with us <span>🔒</span>
-            </p>
-          </form>
-        </div>
-      </div>
-
-      <!-- 4th section -->
-
-      <div class="row row-cols-1 row-cols-md-6 g-4 mt-3 justify-content-center">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ==================================================================================== -->
-
-      <div class="row row-cols-1 row-cols-md-6 g-4 mt-3">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
-            <div class="image-container">
-              <img src="./images/im.jpeg" class="card-img-top" alt="..." />
-              <i class="fa-regular fa-heart heart-icon"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Optimus Prime</h5>
-              <p>#movieStar #influencer</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- FAQ SECTION=================================================================================== -->
-      <div class="mt-5" id="faq-section">
-        <div class="container">
-          <h2 class="text-center mt-5" id="fonth">
-            Frequently Asked Questions
-          </h2>
-          <div class="cont-ques justify-content-center">
-            <div class="container mt-4">
-              <div class="accordion" id="faqAccordion">
-                <!-- First Question -->
-                <div class="accordion-item mb-2">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      What is Influence?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div class="accordion-body">
-                      Influence refers to the ability to affect decisions,
-                      opinions, or actions of others.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Second Question -->
-                <div class="accordion-item mb-2">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Who is an Influencer?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div class="accordion-body">
-                      An influencer is an individual who can affect the purchase
-                      decisions of others because of their authority, knowledge,
-                      or relationship with their audience.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Third Question -->
-                <div class="accordion-item mb-2">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      What are the qualities of an Influencer?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div class="accordion-body">
-                      Influencers are typically authentic, engaging, and
-                      knowledgeable within a particular niche or industry.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Fourth Question -->
-                <div class="accordion-item mb-2">
-                  <h2 class="accordion-header" id="headingFour">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
-                    >
-                      How do Influencers help brands?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFour"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingFour"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div class="accordion-body">
-                      Influencers can help brands reach a wider audience and
-                      build trust through their existing relationships with
-                      their followers.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Fifth Question -->
-                <div class="accordion-item mb-2">
-                  <h2 class="accordion-header" id="headingFive">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive"
-                      aria-expanded="false"
-                      aria-controls="collapseFive"
-                    >
-                      What platforms do Influencers use?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFive"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingFive"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div class="accordion-body">
-                      Influencers primarily use social media platforms like
-                      Instagram, YouTube, Twitter, TikTok, and LinkedIn to
-                      engage with their audiences.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Sixth Question -->
-                <div class="accordion-item mb-2">
-                  <h2 class="accordion-header" id="headingSix">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseSix"
-                      aria-expanded="false"
-                      aria-controls="collapseSix"
-                    >
-                      How do Influencers get paid?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseSix"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingSix"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div class="accordion-body">
-                      Influencers are typically paid through sponsored content,
-                      brand partnerships, affiliate marketing, or ad revenue
-                      from platforms like YouTube.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Additional questions can be added similarly -->
-              </div>
-            </div>
-          </div>
-        </div>
-      
-
-   
-    </div>
-    <div class=" container mt-3 mb-3">
-      <div class="row">
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-          <button type="button" class="btn btn-dark w-100">
-            Celebraties
-          </button>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-          <button type="button" class="btn btn-dark w-100">Movies</button>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-          <button type="button" class="btn btn-dark w-100">TV Shows</button>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-          <button type="button" class="btn btn-dark w-100">Web Series</button>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-          <button type="button" class="btn btn-dark w-100">
-            Sports Events
-          </button>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-          <button type="button" class="btn btn-dark w-100">Events</button>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-          <button type="button" class="btn btn-dark w-100">Wishes</button>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-          <button type="button" class="btn btn-dark w-100">Gifts</button>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-          <button type="button" class="btn btn-dark w-100">Quotes</button>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-          <button type="button" class="btn btn-dark w-100">
-            Invitations
-          </button>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-          <button type="button" class="btn btn-dark w-100">Captions</button>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-          <button type="button" class="btn btn-dark w-100">Aarti</button>
-        </div>
-      </div>
-    </div>
-  </div>
-    <!-- Add more FAQ items similarly -->
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-
   </body>
 </html>
