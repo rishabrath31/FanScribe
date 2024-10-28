@@ -1,0 +1,116 @@
+.card-content {
+  margin: auto;
+}
+.card-content .card-body small {
+  display: block;
+}
+.card-content .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 15px;
+}
+
+.card-content .card-body h5 {
+  margin-left: 15px;
+}
+
+.card-content .card-body small {
+  display: block;
+}
+
+.card-body img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card-content .favorite-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  text-align: center;
+  height: 50px;
+}
+
+.video-section {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px 10px;
+}
+
+.video-card {
+  height: 150px;
+  width: 120px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-one {
+  padding: 10px 10px;
+}
+.card-one h2 {
+  font-size: larger;
+}
+.custom-video-section {
+  max-width: 600px;
+}
+
+.custom-video-section h2 {
+  font-size: 1.5rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.rating {
+  color: #ddbe0d;
+  font-weight: bold;
+}
+
+.reason-buttons .btn {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  color: black;
+  border-radius: 20px;
+  border-color: black;
+}
+
+.reason-buttons .btn:hover {
+  background-color: #28a745;
+  border-radius: 30px;
+  color: white;
+  border-color: black;
+}
+
+.read-details span {
+  font-weight: bolder;
+  color: black;
+}
+
+.read-details p {
+  color: rgb(91, 87, 87);
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.instructions span {
+  font-weight: bold;
+  color: black;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}

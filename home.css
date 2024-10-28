@@ -1,17 +1,11 @@
-.container {
-  /* height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
 .logo-and-text {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  justify-content: center;
+}
+.logo-and-text h5 {
+  color: #666;
 }
 .logo-and-text img {
   max-width: 150px;
@@ -26,8 +20,6 @@ h1 {
 .description {
   font-size: 1.2em;
   color: #666;
-  max-width: 600px;
-  margin: 10px 0; /* Adjusted margin */
 }
 
 .btn-1 {
@@ -35,9 +27,9 @@ h1 {
   padding: 10px 20px;
   font-size: 1.2em;
   border-radius: 50px;
-  color: white; /* Text color white */
+  color: white;
   text-decoration: none;
-  width: 220px;
+  width: 200px;
   display: inline-block; /* Ensure it behaves like a block */
   text-align: center; /* Center the text inside */
 }
@@ -86,7 +78,7 @@ h1 {
 
 /* Container 2 Styling */
 .container-2 {
-  margin-top: 100px;
+  margin-top: 50px;
   border-radius: 8px;
   text-align: center;
 }
@@ -159,7 +151,7 @@ h1 {
   width: 100px; /* Adjust the size as needed */
   height: 100px;
   border-radius: 50%;
-  object-fit: fill;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 .category img:hover {
@@ -187,6 +179,59 @@ h1 {
 /* ======================================================= */
 /* FORM SECTION */
 
+/* General Styles */
+.get-work {
+  background-color: #f2f2f2; /* Light background for contrast */
+  padding: 40px 20px; /* Padding around the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Title Styles */
+.get-work h2 {
+  font-size: 32px; /* Font size for the title */
+  color: #333; /* Dark color for text */
+  margin-bottom: 30px; /* Space below the title */
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 20px; /* Space below each form group */
+}
+
+/* Input Field Styles */
+.form-control {
+  border: none; /* Remove border */
+  border-bottom: 2px solid #28a745; /* Green bottom border */
+  border-radius: 0; /* Remove rounding */
+  box-shadow: none; /* Remove any shadow */
+  transition: border-bottom-color 0.3s; /* Transition for focus effect */
+}
+
+/* Focus Effect */
+.form-control:focus {
+  border-bottom: 2px solid #007bff; /* Change border color on focus */
+  outline: none; /* Remove outline */
+}
+
+/* Button Styles */
+.btn {
+  width: 100%; /* Full-width buttons */
+  padding: 10px; /* Padding inside buttons */
+}
+
+/* Budget Button Styles */
+.budget-btn {
+  width: auto; /* Width auto for budget buttons */
+  margin-right: 10px; /* Space between budget buttons */
+  margin-bottom: 10px; /* Space below budget buttons */
+}
+
+/* Text Centering */
+.text-center {
+  text-align: center; /* Center text */
+}
+
 h2 {
   color: #ffffff;
   margin-bottom: 30px;
@@ -200,11 +245,13 @@ label {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-
+.btn-success {
+  width: 80px;
+}
 /* ==================================================================================== */
-.container {
-  width: 100%;
-  overflow-x: hidden;
+
+.cont h1 {
+  text-align: center;
 }
 
 .imgg {
@@ -234,4 +281,98 @@ label {
 .font-bolder {
   display: flex;
   justify-content: center;
+}
+/* WHAT WE DO SECTION */
+.work .work-do {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work .work-do:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.work h1 {
+  text-align: center;
+}
+
+.work .work-do h5 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: green;
+}
+
+.work .work-do p {
+  font-size: 16px;
+}
+
+/* WHY CHOOSE US  */
+
+.choose-us h2 {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+.choose-us .col-lg-12 h3 {
+  font-size: 25px;
+  color: green;
+  font-size: xx-large;
+  font-weight: 500;
+}
+/* PROCESS */
+
+/* Main heading */
+.process h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Process card styling */
+.process {
+  margin-bottom: 50px;
+}
+.process .process-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  width: 100%;
+}
+
+.process .process-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.process h1 {
+  text-align: center;
+}
+
+.process .process-card h5 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: green;
+}
+
+.process .process-card p {
+  font-size: 16px;
+}
+
+#faq-section {
+  background-color: #f2f2f2;
+  color: black;
+  padding: 50px 0;
 }
