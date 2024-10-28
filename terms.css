@@ -1,4 +1,6 @@
-/* HEADER STYLING */
+body {
+  background-image: url(./images/bg-term.png);
+} /* HEADER STYLING */
 .logo-and-text {
   display: flex;
   padding: 15px 0;
@@ -20,7 +22,6 @@
   position: fixed;
   height: 100vh;
   padding-top: 10px;
-  
 }
 
 .terms-list ul {
