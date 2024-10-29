@@ -1,0 +1,24 @@
+.custom-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  height: 100%;
+}
+
+.custom-card h5 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.custom-card .rating {
+  font-size: 1.1em;
+  color: #ffbb33;
+}
+
+.custom-card p {
+  color: #555;
+  font-size: 0.95em;
+}
